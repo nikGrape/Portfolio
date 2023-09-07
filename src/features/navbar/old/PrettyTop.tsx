@@ -1,5 +1,5 @@
-import { motion, useInView } from 'framer-motion';
-import { useState, useRef } from 'react';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { Li } from './Li.style';
 import { MenuButton } from '../MenuButton.style';
 

@@ -24,7 +24,7 @@ export const Project = ({ header, desc, image, links }: ProjectProps) => {
 				onViewportLeave={() => setOnView(false)}
 				className='image-box'
 			>
-				{/* <img src={image} alt='project-picture' /> */}
+				<img src={image} alt='project-picture' />
 			</motion.span>
 			<motion.h3
 				variants={variants}
