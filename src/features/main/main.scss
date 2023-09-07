@@ -1,0 +1,83 @@
+$blue-color: #3c31dd;
+$red-color: #c03528;
+$pink-color: #90204f;
+$pink-old-color: #c62368;
+$brown-color: #763500;
+$dark-color: #242424;
+$darker-color: #101010;
+
+p,
+h1,
+h3 {
+	z-index: 1;
+}
+
+.blue {
+	background: $blue-color;
+}
+
+.red {
+	background: $red-color;
+}
+
+.pink {
+	background: $pink-color;
+}
+
+.dark {
+	background: $darker-color;
+}
+
+.brown {
+	background-color: $brown-color;
+}
+
+.wave {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.wave svg {
+	position: relative;
+	display: block;
+	width: calc(140% + 1.3px);
+	height: 103px;
+	transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+	fill: #101010;
+}
+
+.spacer {
+	aspect-ratio: 960/250;
+	width: 100vw;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.layer-1 {
+	background-image: url('../../assets/layered-waves-haikei.svg');
+}
+
+.layer-2 {
+	background-image: url('../../assets/layered-peaks-haikei.svg');
+}
+
+.layer-3 {
+	background-image: url('../../assets/stacked-waves-haikei.svg');
+}
+
+.layer-4 {
+	background-image: url('../../assets/wave-haikei.svg');
+}
+
+.flip {
+	transform: rotate(180deg);
+}

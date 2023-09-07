@@ -1,0 +1,27 @@
+{
+	"postmates": {
+		"url": "https://postmates.com/",
+		"logoURL": "https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/eaeeaa0bad299fe0.svg",
+		"header": "Postmates",
+		"desc": "Software Engineer Intern",
+		"achieve": [
+			"Initiated and executed updates to user tests, making them 40% faster and saving 3-30 minutes per employee per workday",
+			"Managed updates to internal API's usage guides and services, resulting in a 25% reduction in working time",
+			"Tested software for bugs and operating speed using the nose testing package",
+			"Cleaned code, fixed bugs, and documented processes to increase efficiency",
+			"Initiated an update to the onboarding playbook for new hires, accelerating the onboarding process"
+		]
+	},
+	"isratek": {
+		"url": "https://42.fr/en/homepage/",
+		"logoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/200px-Blue_question_mark_icon.svg.png?20220812155222",
+		"header": "Isratek",
+		"desc": "Java engineer Coop (part time)",
+		"achieve": [
+			"Updated legacy code to improve efficiency and readability, resulting in a 30% reduction in code length",
+			"Automated an algorithm to reduce product tears on factory machines by 3%",
+			"Led a project to improve the UI of the machines, resulting in a 15% increase in convenience and a 15% reduction in operator fatigue",
+			"Led a documentation update project, saving 0.5 man/hours per document"
+		]
+	}
+}

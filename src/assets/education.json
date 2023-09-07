@@ -1,0 +1,70 @@
+{
+	"foothill": {
+		"url": "https://foothill.edu/",
+		"logoURL": "https://github.com/nikGrape/Portfolio/assets/48928594/dd5bb7b4-c416-4935-9e7b-0d2c9060fe1e",
+		"header": "Foothill College",
+		"desc": "Computer Science (2023)",
+		"achieve": [
+			"Montained high GPA of 3.9",
+			"Gained strong knowledge in software development",
+			"Deep knowledge in Computer Science"
+		]
+	},
+	"rs": {
+		"url": "https://www.rs.school/",
+		"logoURL": "https://github.com/nikGrape/Portfolio/assets/48928594/048b50d3-417a-4049-af93-73ef949ea706",
+		"header": "RS School",
+		"desc": "React Development Bootcamp",
+		"achieve": [
+			"React, React Hooks, Redux",
+			"Styled Components, React-Router, Motion, GraphQL",
+			"Team work"
+		]
+	},
+	"FCC": {
+		"url": "https://www.freecodecamp.org/",
+		"logoURL": "https://github.com/nikGrape/Portfolio/assets/48928594/054d5ee1-be8d-4f68-be9c-2736c6a29d74",
+		"header": "FreeCodeCamp",
+		"desc": "MERN Full Stack Engineer (2020)",
+		"achieve": [
+			"JavaScript Algorithms and Data Structures",
+			"Responsive Web Design",
+			"Front End Development Libraries",
+			"Back End Development and APIs"
+		]
+	},
+	"ft": {
+		"url": "https://42.fr/en/homepage/",
+		"logoURL": "https://42.fr/wp-content/uploads/2021/05/42-Final-sigle-seul.svg",
+		"header": "42 Silicon Valley",
+		"desc": "Computer Science (2020)",
+		"achieve": [
+			"Created a coding video explanatory course with 70,000+ views, helping fellow students",
+			"Developed skills through real-world interactions with colleagues through peer evaluations and group projects",
+			"C, Git, Unix, Bash"
+		]
+	},
+	"javarush": {
+		"url": "https://javarush.com/en/",
+		"logoURL": "https://github.com/nikGrape/Portfolio/assets/48928594/fea6e7a0-1134-4739-8fbe-b3d00b597812",
+		"header": "JavaRush Academy",
+		"desc": "Java bootcamp",
+		"achieve": [
+			"1200 tasks solved",
+			"Java Collections",
+			"IntelliJ Idea, Maven, Core, Collections, OOP, MVC",
+			"Swing, Reflection API, Concurrent API, Stream API, IO/NIO, Dynamic Proxy, RMI, JSON(Jackson), JAXB, JUnit, Logging API (log4j)"
+		]
+	},
+	"TGU": {
+		"url": "https://en.tversu.ru/",
+		"logoURL": "https://github.com/nikGrape/Portfolio/assets/48928594/3b470976-800f-40d0-88da-baff6e29feb4",
+		"header": "Tver State University",
+		"desc": "Master's degree in Physics with a minor in Staff Management (2008-2013)",
+		"achieve": [
+			"Gained research and cooperation skills through analysis of high-speed steel with a scanning electron microscope for a local factory, resulting in a 30% reduction in expenses and a 15% increase in efficiency",
+			"Strong knowledge of Java",
+			"Government Scholarship Recipient"
+		]
+	}
+}

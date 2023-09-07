@@ -1,0 +1,151 @@
+$length: 20px;
+$width: 1px;
+$impulse-length: 3px;
+$bright-color: #dadada;
+$dark-color: #242424;
+$impulse-time: 700ms;
+
+.pulsar {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	// border: 1px solid white;
+	width: $length * 2;
+	height: $length * 2;
+	margin: auto;
+	position: relative;
+	animation: spin 6s linear 200ms infinite;
+
+	.puls-line {
+		width: $width;
+		height: $length;
+		background: linear-gradient(180deg, $bright-color, $dark-color);
+		border-radius: 1px;
+		margin: auto;
+		overflow: visible;
+		position: relative;
+
+		.impulse {
+			position: relative;
+			right: calc($width / 2);
+			width: calc($width * 2);
+			height: $impulse-length;
+			background-color: $bright-color;
+			border-radius: 1px;
+			animation: pulse $impulse-time ease-out infinite;
+		}
+
+		@keyframes pulse {
+			0% {
+				top: $length - $impulse-length;
+				opacity: 0;
+			}
+
+			100% {
+				top: 0px;
+				opacity: 1;
+			}
+		}
+	}
+
+	#pulse1 {
+		transform: rotate(315deg);
+		animation: spin-pulse1 6s ease-out 200ms infinite forwards;
+	}
+	#pulse2 {
+		transform: rotate(45deg);
+		animation: spin-pulse2 6s ease-out 200ms infinite forwards;
+	}
+	#pulse3 {
+		transform: rotate(225deg);
+		animation: spin-pulse3 6s ease-out 200ms infinite forwards;
+	}
+	#pulse4 {
+		transform: rotate(135deg);
+		animation: spin-pulse4 6s ease-out 200ms infinite forwards;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes spin-pulse1 {
+	0% {
+		transform: rotate(315deg);
+	}
+	8% {
+		transform: rotate(305deg);
+	}
+	50% {
+		transform: rotate(305deg);
+	}
+	58% {
+		transform: rotate(325deg);
+	}
+	100% {
+		transform: rotate(325deg);
+	}
+}
+
+@keyframes spin-pulse2 {
+	0% {
+		transform: rotate(45);
+	}
+	8% {
+		transform: rotate(35deg);
+	}
+	50% {
+		transform: rotate(35deg);
+	}
+	58% {
+		transform: rotate(55deg);
+	}
+	100% {
+		transform: rotate(55deg);
+	}
+}
+
+@keyframes spin-pulse3 {
+	0% {
+		transform: rotate(225deg);
+	}
+	8% {
+		transform: rotate(215deg);
+	}
+	50% {
+		transform: rotate(215deg);
+	}
+	58% {
+		transform: rotate(235deg);
+	}
+	100% {
+		transform: rotate(235deg);
+	}
+}
+
+@keyframes spin-pulse4 {
+	0% {
+		transform: rotate(135deg);
+	}
+	8% {
+		transform: rotate(125deg);
+	}
+	50% {
+		transform: rotate(125deg);
+	}
+	58% {
+		transform: rotate(145deg);
+	}
+	100% {
+		transform: rotate(145deg);
+	}
+}

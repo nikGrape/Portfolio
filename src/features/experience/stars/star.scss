@@ -1,0 +1,25 @@
+.star {
+	animation: shoot 1300ms ease-in forwards;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	opacity: 0;
+	z-index: 1;
+}
+
+@keyframes shoot {
+	0% {
+		transform: scale(0);
+	}
+	99% {
+		transform: scale(1) translate(10px, -160px) rotate(40deg);
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1) translate(10px, -160px) rotate(40deg);
+	}
+}
