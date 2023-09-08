@@ -26,6 +26,14 @@ export const Navigation = () => (
 	</motion.ul>
 );
 
+// $blue-color: #3c31dd;
+// $red-color: #c03528;
+// $pink-color: #90204f;
+// $pink-old-color: #c62368;
+// $brown-color: #763500;
+// $dark-color: #242424;
+// $darker-color: #101010;
+
 const navigationPoints = [
 	{
 		text: 'Intro',

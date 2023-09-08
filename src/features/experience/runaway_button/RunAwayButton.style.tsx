@@ -10,9 +10,9 @@ export const Button = styled.button<{ $animation_type: string }>`
 	align-items: center;
 	transition: all ease-in-out 300ms;
 	z-index: 2;
-	user-select: 'none';
-	outline: 'none';
-	pointer-events: 'none';
+	user-select: none;
+	outline: none;
+	border: none;
 	animation: ${(props) => props.$animation_type}
 		${(props) => {
 			switch (props.$animation_type) {

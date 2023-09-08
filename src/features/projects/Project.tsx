@@ -47,8 +47,12 @@ export const Project = ({ header, desc, image, links }: ProjectProps) => {
 					stiffness: 150,
 				}}
 			>
-				<a href={links[0]}>Deploy</a>
-				<a href={links[1]}>GitHub</a>
+				<a href={links[0]} target='_blank'>
+					Deploy
+				</a>
+				<a href={links[1]} target='_blank'>
+					GitHub
+				</a>
 			</motion.span>
 
 			<motion.p
