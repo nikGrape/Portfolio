@@ -13,9 +13,9 @@
 		]
 	},
 	"isratek": {
-		"url": "https://42.fr/en/homepage/",
-		"logoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_question_mark_icon.svg/200px-Blue_question_mark_icon.svg.png?20220812155222",
-		"header": "Isratek",
+		"url": "https://eurometfilms.ru/",
+		"logoURL": "src/assets/isratek.svg",
+		"header": "ISRATEKS EUROMET FILMS",
 		"desc": "Java engineer Coop (part time)",
 		"achieve": [
 			"Updated legacy code to improve efficiency and readability, resulting in a 30% reduction in code length",

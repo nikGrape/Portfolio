@@ -1,9 +1,10 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion, useCycle } from 'framer-motion';
 import { useDimensions } from './use-dimensions';
 import { MenuToggle } from './MenuToggle';
 import { Navigation } from './Navigation.tsx';
 import './styles.scss';
+import { useOnClickOutside } from '../../hooks/useOnClickOutside.tsx';
 
 const sidebar = {
 	open: (height = 1000) => ({
@@ -27,8 +28,24 @@ const sidebar = {
 
 export const Menu = () => {
 	const [isOpen, toggleOpen] = useCycle(false, true);
+	const [showButtons, toggleShowButtons] = useState(false);
 	const containerRef = useRef(null);
 	const { height } = useDimensions(containerRef);
+	useOnClickOutside(containerRef, () => {
+		if (isOpen) toggleOpen();
+	});
+
+	useEffect(() => {
+		if (!isOpen) {
+			const timeout = setTimeout(() => {
+				toggleShowButtons(false);
+			}, 1000);
+
+			return () => {
+				clearTimeout(timeout);
+			};
+		}
+	}, [isOpen]);
 
 	return (
 		<motion.nav
@@ -39,8 +56,19 @@ export const Menu = () => {
 			ref={containerRef}
 		>
 			<motion.div className='background' variants={sidebar} />
-			<Navigation />
-			<MenuToggle toggle={() => toggleOpen()} />
+			{(showButtons || isOpen) && <Navigation />}
+			<MenuToggle
+				toggle={() => {
+					if (!isOpen) {
+						toggleShowButtons(true);
+						setTimeout(() => {
+							toggleOpen();
+						}, 1);
+					} else {
+						toggleOpen();
+					}
+				}}
+			/>
 		</motion.nav>
 	);
 };

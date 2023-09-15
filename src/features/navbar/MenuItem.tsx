@@ -13,7 +13,6 @@ const variants = {
 	closed: {
 		y: 50,
 		opacity: 0,
-		display: 'none',
 		transition: {
 			y: { stiffness: 1000 },
 		},
