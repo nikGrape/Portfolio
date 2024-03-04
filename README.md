@@ -1,7 +1,11 @@
-# Portfolio
-My Portfolio
+# Portfolio Project
+
+Screnshot:
 
 <img width="650" alt="Screenshot 2023-09-07 at 1 40 47 PM" src="https://github.com/nikGrape/Portfolio/assets/48928594/0f1af9c9-f0e9-4de7-a72a-badd129c2aa2">
+
+
+Deploy: [link](https://nikolai-vinogradov.netlify.app/)
 
 Stack used: React, FramerMotion, EmailJS, SVG, Creativity
 
